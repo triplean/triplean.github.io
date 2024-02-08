@@ -1,0 +1,17 @@
+[
+  {
+      "title": "Ayuda con FNAF Security Breach",
+      "html": "<h1>Bienvenido a la ayuda de FNAF Security Breach</h1><p>En esta guía encontrarás...</p><img src='logo.png'><p>Otro párrafo...</p><p>Más párrafo</p><p>Más párrafo</p><p>Más párrafo</p><p>Más párrafo</p><p>Más párrafo</p>",
+      "highlighted": true
+  },
+  {
+      "title": "Cómo derrotar a Monty",
+      "html": "<h1>Cómo derrotar a Monty</h1><p>Para derrotar a Monty, sigue estos pasos...<p>Otro párrafo...</p>",
+      "highlighted": true
+  },
+  {
+      "title": "Trucos y consejos",
+      "html": "<h1>Trucos y consejos para FNAF Security Breach</h1><p>Aquí tienes algunos trucos y consejos...</p><img src=bonnie.png'><p>Más información...</p>",
+      "highlighted": false
+  }
+]
