@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('sugerenciaForm').addEventListener('submit', function(event) {
-        event.preventDefault(); // Evitar el envío del formulario por defecto
+        event.preventDefault(); 
         
         var nombre = document.getElementById('nombre').value;
         var email = document.getElementById('email').value;
@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 throw new Error('Hubo un problema al enviar la sugerencia.');
             }
             alert('¡Sugerencia enviada con éxito!');
-            location.reload(); // Recargar la página después de enviar la sugerencia
+            location.reload(); 
         })
         .catch(error => {
             console.error('Error:', error);

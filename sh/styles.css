@@ -57,21 +57,20 @@ body {
   
   #inicio {
     background-image: url('inicio_bg.jpg');
-    /* Reemplazar 'inicio_bg.jpg' con tu imagen de fondo */
+
     background-size: cover;
     background-position: center;
   }
   
   #descargar {
     background-image: url('descargar_bg.jpg');
-    /* Reemplazar 'descargar_bg.jpg' con tu imagen de fondo */
     background-size: cover;
     background-position: center;
   }
   
   #sugerencias {
     background-image: url('sugerencias_bg.jpg');
-    /* Reemplazar 'sugerencias_bg.jpg' con tu imagen de fondo */
     background-size: cover;
     background-position: center;
   }
+
