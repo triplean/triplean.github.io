@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
         var sugerencia = document.getElementById('sugerencia').value;
         var mensaje = `Nueva sugerencia recibida:\nNombre: ${nombre}\nEmail: ${email}\nSugerencia: ${sugerencia}`;
 
-        fetch('https://discord.com/api/webhooks/1211409451156897883/rtaXx9RaJcid1dPXG_dJ_ZjRWTzakXsUoBWiAKzRUib0xUhWhzjTvgD7PhFoHfDvluOV', {
+        fetch('CLOSED SYSTEM', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
