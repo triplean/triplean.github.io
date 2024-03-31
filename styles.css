@@ -23,7 +23,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #000000;
     text-decoration: none;
 }
 
@@ -50,7 +50,7 @@ section.project {
 }
 
 footer {
-    background-color: #333;
+    background-color: #F9F500;
     color: #fff;
     padding: 20px;
     text-align: center;
