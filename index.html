@@ -3,31 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main Lobby</title>
+    <title>TripleAn</title>
     <link rel="stylesheet" href="styles.css">
-    <meta name="google-site-verification" content="cXNPq9x4H4MqfOrKT2_-Dk5I1A13xDgSuRZ_GFBYx7w" />
 </head>
 <body>
-    <header>
-        <h1>My projects</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section class="project">
-        <h2>Security Helpy</h2>
-        <p>¡Bienvenido a Security Helpy! Una aplicación diseñada para ayudarte a pasar misiones en FNAF Security Breach. Haz clic en el enlace a continuación para acceder a la página de Security Helpy.</p>
-        <a href="https://triplean.github.io/sh/" class="button">Ir a Security Helpy</a>
-    </section>
-    <section class="project">
-        <h2>Matemáticas con Perejil</h2>
-        <p>¡Compite contra otros en una guerra matemática!</p>
-        <a href="https://triplean.github.io/matconperejil/", class="button">Ir a Matemáticas con perejil</a>
-    </section>
-    <footer>
-        <p>&copy; 2024 AnConTriplea - Todos los derechos reservados.</p>
-    </footer>
+    <script>
+        function sh_func() {
+            window.location.href = "https://triplean.github.io/sh/";
+        }
+    </script>
+
+    <h1 class="nom_tit"><span>TripleAn</span><a>Hago cosas (tal vez)</a></h1>
+    <h3 class="about_tit">Acerca de mi</h3>
+    <img src="an.png" class="img_an">
+    <p class="about_txt">Hola, soy An. Me gusta programar en cosas como Python, C o C++. Hago proyectos en ratos libres, principlamente en Python.</p>
+    <p class="frase_txt">"Para ganar la carrera de la vida, es necesario comprender la importancia del fracaso"</p>
+    <h3 class="proyectos_tit">Proyectos</h3>
+    <button class="sh_img", onclick="sh_func()"><img src="sh/logo_new.png"><p class="sh_img_txt">Security Helpy</p></button>
 </body>
 </html>
