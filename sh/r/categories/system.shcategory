@@ -1,5 +1,6 @@
 {
     "title": "Bienvenido",
     "html": "<h1>Bienvenido a Security Helpy 2.0</h1>",
-    "highlighted": true
+    "highlighted": true,
+    "category": "System"
 }
