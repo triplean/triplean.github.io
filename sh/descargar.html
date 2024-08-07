@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Descargar Security Helpy</title>
+    <title>Dercargar - Security Helpy</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="https://triplean.github.io/projects/SecurityHelpy/resources/logo_new.ico" type="image/x-icon">
-    <script src="script.js"></script>
 </head>
 <body>
     <header>
-        <h1>Descargar Security Helpy</h1>
+        <h1>Security Helpy</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
@@ -20,15 +19,31 @@
         </nav>
     </header>
     <section id="descargar">
-        <h2>Descargar Security Helpy</h2>
-        <p>Haz clic en el enlace de abajo para descargar la aplicación Security Helpy:</p>
-        <button onclick="window.location='https://shdownloads.vercel.app/downloads/Security_Helpy.zip'" class="button">Descargar para windows</button>
-        <p>Es posible que el antivirus detecte un falso positivo, estamos trabajando para solucionar esto.</p>
+        <h2>¿Estás listo?</h2>
+        <p>Presiona el boton para descargar Security Helpy</p>
+        <p id="bttn_des" href="https://github.com/triplean/triplean.github.io/raw/main/projects/SecurityHelpy/resources/security-helpy-1.0-install.exe" class="button">Descargar Para Windows</p>
+
+        <script>
+            var mac_des_link = "https://github.com/triplean/triplean.github.io/raw/main/projects/SecurityHelpy/resources/security-helpy-1.0-install.exe"
+
+            HTMLDocument.prototype.e = document.getElementById;
+            var boton_descargar = document.e("bttn_des");
+
+            var os = "Desconocido";
+
+            if (navigator.appVersion.indexOf("Win") !=-1) os = "Windows"
+            if (navigator.appVersion.indexOf("Mac") !=-1) os = "MacOS"
+            if (navigator.appVersion.indexOf("X11") !=-1) os = "UNIX"
+            if (navigator.appVersion.indexOf("Linux") !=-1) os = "Linux"
+
+            if (os == "Windows") {
+                boton_descargar.href = ""
+            }
+        </script>
     </section>
     </section>
     <footer>
-        <p>&copy; 2024 Security Helpy - Todos los derechos reservados.</p>
-        <a href="https://triplean.github.io/privacy.html">Política de privacidad</a>
+        <p>Problemas? Contáctame: <a href="mailto:hello.triplean.dev@gmail.com">hello.triplean.dev@gmail.com</a></p>
     </footer>
 </body>
 </html>
