@@ -1,1 +1,1 @@
-https://triplean.github.io/sh/r/categories/system.shguide
+https://triplean.github.io/sh/r/categories/system.shcategory
