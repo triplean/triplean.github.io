@@ -3,18 +3,18 @@
     "id": 1,
     "title": "Guía de Super Mario",
     "content": "Salta sobre los enemigos para eliminarlos.",
-    "level": "Básico"
+    "juego": "Super Mario"
   },
   {
     "id": 2,
     "title": "Zelda: Breath of the Wild - Consejos iniciales",
     "content": "Explora cada rincón para encontrar secretos y mejoras.",
-    "level": "Intermedio"
+    "juego": "Zelda: Breath of the wild"
   },
   {
     "id": 3,
     "title": "Guía avanzada de Dark Souls",
     "content": "Usa la armadura ligera para moverte rápido y esquivar ataques.",
-    "level": "Avanzado"
+    "juego": "Dark Souls"
   }
 ]
