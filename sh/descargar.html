@@ -24,7 +24,7 @@
         <p id="bttn_des" href="https://github.com/triplean/triplean.github.io/raw/main/projects/SecurityHelpy/resources/security-helpy-1.0-install.exe" class="button">Descargar Para Windows</p>
 
         <script>
-            var mac_des_link = "https://github.com/triplean/triplean.github.io/raw/main/projects/SecurityHelpy/resources/security-helpy-1.0-install.exe"
+            var win_des_link = "https://github.com/triplean/triplean.github.io/raw/main/projects/SecurityHelpy/resources/security-helpy-1.0-install.exe"
 
             HTMLDocument.prototype.e = document.getElementById;
             var boton_descargar = document.e("bttn_des");
@@ -36,8 +36,10 @@
             if (navigator.appVersion.indexOf("X11") !=-1) os = "UNIX"
             if (navigator.appVersion.indexOf("Linux") !=-1) os = "Linux"
 
-            if (os == "Windows") {
-                boton_descargar.href = ""
+            if (os === "Windows") {
+                boton_descargar.href = win_des_link
+            } else {
+                boton_descargar.href = "https://github.com/triplean/securityhelpy/"
             }
         </script>
     </section>
@@ -45,6 +47,7 @@
     <footer>
         <p>Problemas? Contáctame: <a href="mailto:hello.triplean.dev@gmail.com">hello.triplean.dev@gmail.com</a></p>
         <p><a href="https://triplean.github.io/privacy.html">Política de privacidad</a></p>
+        <p><a class="dis">Five Night's At Freddy's es propiedad de Scott Cawthon y no tengo relación alguna con la marca</a></p>
     </footer>
 </body>
 </html>
