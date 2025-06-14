@@ -3,7 +3,8 @@
     "id": 1,
     "title": "¡Bienvenido!",
     "content": "¡Bienvenido a Security Helpy! Aquí encontrarás diversos tutoriales para tus juegos favoritos",
-    "game": "Sistema"
+    "game": "Sistema",
+    "imageUrls": []
   },
   {
     "id": 2,
