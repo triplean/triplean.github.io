@@ -1,2 +1,42 @@
-<!DOCTYPE html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Descargar - Security Helpy</title><link rel="icon" href="https://triplean.github.io/projects/SecurityHelpy/resources/logo_new.ico" type="image/x-icon"><style>body{font-family:Arial,sans-serif;margin:0;padding:0;background-color:#1e1e1e;color:#fff}header{background-color:#1e1e1e;color:#fff;padding:20px;text-align:center}h1{margin:0}nav ul{list-style-type:none;padding:0}nav ul li{display:inline;margin-right:20px}nav ul li a{color:#fff;text-decoration:none}section{padding:50px}footer{color:#fff;text-align:center}.link{color:#008b8b;text-underline:darkcyan}.logo{display:block;margin:auto;width:145px;height:127px}.button{display:inline-block;background-color:#8f1e3d;color:#fff;padding:10px 20px;text-decoration:none;border-radius:5px}#inicio,#descargar,#sugerencias{background-size:cover;background-position:center}.new_ver{background-color:#8f1e3d}.cap1{width:324px;height:674px}.arrow-down-index{display:block;margin-left:auto;margin-right:auto;width:50px;height:50px;margin-top:-40px}.sug_lbl{display:block;margin:auto}
-</style></head> <body> <header> <h1>Security Helpy</h1> <nav> <ul> <li><a href="/sh/">Inicio</a></li> <li><a href="#descargar">Descargar</a></li> <li><a href="sugerencias">Sugerencias</a></li> </ul> </nav> </header> <section id="descargar"> <h2>¿Estás listo?</h2> <p>Presiona el boton para descargar Security Helpy</p> <p id="bttn_des" href="https://github.com/triplean/triplean.github.io/raw/main/projects/SecurityHelpy/resources/security-helpy-1.0-install.exe" class="button">Descargar Para Windows</p> <script type="module">var n="https://github.com/triplean/triplean.github.io/raw/main/projects/SecurityHelpy/resources/security-helpy-1.0-install.exe";HTMLDocument.prototype.e=document.getElementById;var i=document.e("bttn_des"),e="Desconocido";navigator.appVersion.indexOf("Win")!=-1&&(e="Windows");navigator.appVersion.indexOf("Mac")!=-1&&(e="MacOS");navigator.appVersion.indexOf("X11")!=-1&&(e="UNIX");navigator.appVersion.indexOf("Linux")!=-1&&(e="Linux");e==="Windows"?i.href=n:i.href="https://github.com/triplean/securityhelpy/";</script> </section> <footer> <p>Problemas? Contáctame: <a href="mailto:hello.triplean.dev@gmail.com" class="link">hello.triplean.dev@gmail.com</a></p> <p><a href="https://triplean.github.io/privacy" class="link">Política de privacidad</a></p> <p><a class="dis">Five Night's At Freddy's es propiedad de Scott Cawthon y no tengo relación alguna con la marca</a></p> </footer> </body>
+<!DOCTYPE html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Descargar - Security Helpy</title><link rel="icon" href="/sh_logo.ico" type="image/x-icon"><style>body{font-family:Arial,sans-serif;margin:0;padding:0;background-color:#1e1e1e;color:#fff}header{background-color:#1e1e1e;color:#fff;padding:20px;text-align:center}h1{margin:0}nav ul{list-style-type:none;padding:0}nav ul li{display:inline;margin-right:20px}nav ul li a{color:#fff;text-decoration:none}section{padding:50px}.logo{display:block;margin:auto;width:145px;height:127px}.button{display:inline-block;background-color:#8f1e3d;color:#fff;padding:10px 20px;text-decoration:none;border-radius:5px}#inicio,#descargar,#sugerencias{background-size:cover;background-position:center}.new_ver{background-color:#8f1e3d}.cap1{width:324px;height:674px}.arrow-down-index{display:block;margin-left:auto;margin-right:auto;width:50px;height:50px;margin-top:-40px}.sug_lbl{display:block;margin:auto}.down_bttn{color:#f5f5f5;background-color:#1e1e1e;border:2px solid #3a3a3a;border-radius:10px}.android_logo{width:207.2px;height:132.2px}.fedora_logo{width:132px;height:132px}#sugerencia{width:300px;height:200px}.link{color:#008b8b;text-underline:darkcyan}.footer[data-astro-cid-wylliajd]{color:#fff;text-align:center}.anlink[data-astro-cid-wylliajd]{color:orange;text-underline:orange}.link[data-astro-cid-wylliajd]{color:#008b8b;text-underline:darkcyan}
+</style></head> <body> <header> <div> <img src="/_astro/sh_logo.D8agXL5p_25c39D.webp" alt width="1000" height="870" loading="lazy" decoding="async" class="logo"> <nav> <ul> <li><a href="/sh/">Inicio</a></li> <li><a href="#">Descargar</a></li> <li><a href="/sh/sugerencias">Sugerencias</a></li> </ul> </nav> </div> </header> <section id="descargar"> <h2>¿Estás listo?</h2> <p>Da click en tu plataforma y salta a Security Helpy</p> <button class="down_bttn" id="android_down"><img src="/_astro/android_logo.6Hs_ZQcr_1gHS0x.webp" alt width="296" height="176" loading="lazy" decoding="async" class="android_logo"><br><span>Android</span></button> <button class="down_bttn" id="linux_down"><img src="/_astro/fedora.D8GCByHh_Z9VMNT.webp" alt width="2048" height="2048" loading="lazy" decoding="async" class="fedora_logo"><br><span>Fedora Linux</span></button> <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js";
+        import {
+            getFirestore,
+            doc,
+            getDoc,
+            updateDoc,
+        } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-firestore.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyB2G8p9xGYo4QgY7rVeHt8j_lgI545prk4",
+            authDomain: "securityhelpy.firebaseapp.com",
+            projectId: "securityhelpy",
+            storageBucket: "securityhelpy.appspot.com",
+            messagingSenderId: "",
+            appId: "379942943583"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const db = getFirestore(app);
+        const countRef = doc(db, "stats", "downloads");
+
+        document.getElementById("android_down").addEventListener("click", async () => {
+            const snap = await getDoc(countRef);
+            if (!snap.exists()) return;
+
+            const current = snap.data().android;
+            await updateDoc(countRef, { android: current + 1 });
+
+            window.location.href='https://github.com/triplean/securityhelpy/releases/download/2.0.0/securityhelpy.apk';
+        });
+        document.getElementById("linux_down").addEventListener("click", async () => {
+            const snap = await getDoc(countRef);
+            if (!snap.exists()) return;
+
+            const current = snap.data().linux;
+            await updateDoc(countRef, { linux: current + 1 });
+
+            window.location.href='https://github.com/triplean/securityhelpy/releases/download/2.0.0/linux_x64_securityhelpy.tar.gz'
+        });
+    </script> </section> <div data-astro-cid-wylliajd> <div class="footer" data-astro-cid-wylliajd> <p data-astro-cid-wylliajd>¿Problemas? Contáctame: <a href="mailto:hello.triplean.dev@gmail.com" class="link" data-astro-cid-wylliajd>hello.triplean.dev@gmail.com</a></p> <p data-astro-cid-wylliajd><a class="anlink" href="https://github.com/triplean/" data-astro-cid-wylliajd>Hecho con ❤️ por TripleAn</a></p> <p data-astro-cid-wylliajd><a href="/privacy" class="link" data-astro-cid-wylliajd>Política de privacidad</a></p> </div>  </div> </body>
