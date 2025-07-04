@@ -1,0 +1,24 @@
+<!DOCTYPE html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Enviar Sugerencias - Security Helpy</title><link rel="stylesheet" href="styles.css"><link rel="icon" href="https://triplean.github.io/projects/SecurityHelpy/resources/logo_new.ico" type="image/x-icon"><style>body{font-family:Arial,sans-serif;margin:0;padding:0;background-color:#1e1e1e;color:#fff}header{background-color:#1e1e1e;color:#fff;padding:20px;text-align:center}h1{margin:0}nav ul{list-style-type:none;padding:0}nav ul li{display:inline;margin-right:20px}nav ul li a{color:#fff;text-decoration:none}section{padding:50px}footer{color:#fff;text-align:center}.link{color:#008b8b;text-underline:darkcyan}.logo{display:block;margin:auto;width:145px;height:127px}.button{display:inline-block;background-color:#8f1e3d;color:#fff;padding:10px 20px;text-decoration:none;border-radius:5px}#inicio,#descargar,#sugerencias{background-size:cover;background-position:center}.new_ver{background-color:#8f1e3d}.cap1{width:324px;height:674px}.arrow-down-index{display:block;margin-left:auto;margin-right:auto;width:50px;height:50px;margin-top:-40px}.sug_lbl{display:block;margin:auto}
+</style></head> <body> <header> <h1>Security Helpy</h1> <nav> <ul> <li><a href="/sh/">Inicio</a></li> <li><a href="descargar">Descargar</a></li> <li><a href="sugerencias">Sugerencias</a></li> </ul> </nav> </header> <section> <h2>Enviar Sugerencias</h2> <p>¡Me encantaría escuchar tus sugerencias! Por favor, completa el siguiente formulario:</p> <form id="sugerenciaForm"> <label for="nombre">Nombre:</label> <input type="text" id="nombre" name="nombre" required> <br> <label for="email">Email:</label> <input type="email" id="email" name="email" required> <br> <label class="sug_lbl" for="sugerencia">Sugerencia:</label> <textarea id="sugerencia" name="sugerencia" required></textarea> <br> <button type="submit">Enviar</button> </form> <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js";
+        import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-firestore.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyB2G8p9xGYo4QgY7rVeHt8j_lgI545prk4",
+            authDomain: "securityhelpy.firebaseapp.com",
+            projectId: "securityhelpy",
+            storageBucket: "securityhelpy.appspot.com",
+            messagingSenderId: "",
+            appId: "379942943583"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const db = getFirestore(app);
+
+        document.getElementById("sugerenciaForm").addEventListener("submit", async (e) => {
+            e.preventDefault();
+            const datos = Object.fromEntries(new FormData(e.target));
+            await addDoc(collection(db, "sugerencias"), datos);
+            alert("Formulario enviado");
+        });
+    </script> </section> <footer> <p>Problemas? Contáctame: <a href="mailto:hello.triplean.dev@gmail.com" class="link">hello.triplean.dev@gmail.com</a></p> <p><a href="https://triplean.github.io/privacy.html" class="link">Política de privacidad</a></p> <p><a class="dis">Five Night's At Freddy's es propiedad de Scott Cawthon y no tengo relación alguna con la marca</a></p> </footer> </body>

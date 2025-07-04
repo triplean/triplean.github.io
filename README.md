@@ -1,1 +1,0 @@
-# triplean.github.io
