@@ -1,0 +1,101 @@
+<div class="likes">
+    <div class="liked">
+        <p>¡Dejame un like para mostrar tu apoyo al proyecto!</p>
+        <p id="count">Cargando...</p>
+        <button id="like_bttn">Dar Like</button>
+    </div>
+    <div class="notes">
+        <p>Deja una nota</p>
+        <form id="noteForm">
+            <label>Usuario</label>
+            <input type="text" id="user" name="user"></input>
+            <br>
+            <label>Nota</label>
+            <input type="text" id="note" name="note"></input>
+            <br>
+            <button type="submit" id="note_submit"><span>Enviar</span></button>
+        </form>
+
+        <script type="module">
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js";
+            import {
+                getFirestore,
+                doc,
+                getDoc,
+                updateDoc,
+                collection,
+                addDoc
+            } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-firestore.js";
+
+            const firebaseConfig = {
+                apiKey: "AIzaSyB2G8p9xGYo4QgY7rVeHt8j_lgI545prk4",
+                authDomain: "securityhelpy.firebaseapp.com",
+                projectId: "securityhelpy",
+                storageBucket: "securityhelpy.appspot.com",
+                messagingSenderId: "",
+                appId: "379942943583"
+            };
+
+            const app = initializeApp(firebaseConfig);
+            const db = getFirestore(app);
+            const countRef = doc(db, "stats", "likes");
+
+            function hasClicked() {
+                return document.cookie.includes("hasClicked=1");
+            }
+
+            function setClickedCookie() {
+                document.cookie = "hasClicked=1; path=/; max-age=31536000";
+            }
+
+            async function loadCount() {
+                const snap = await getDoc(countRef);
+                if (snap.exists()) {
+                    document.getElementById("count").textContent = `Likes: ${snap.data().count}`;
+                }
+            }
+
+            document.getElementById("like_bttn").addEventListener("click", async () => {
+                if (hasClicked()) {
+                    alert("Ya has dado like.");
+                    return;
+                }
+
+                const snap = await getDoc(countRef);
+                if (!snap.exists()) return;
+
+                const current = snap.data().count;
+                await updateDoc(countRef, { count: current + 1 });
+                setClickedCookie();
+
+                window.location.reload()
+            });
+
+            document.getElementById("noteForm").addEventListener("submit", async (e) => {
+                e.preventDefault();
+                const datos = Object.fromEntries(new FormData(e.target));
+                await addDoc(collection(db, "stats", "likes", "likers"), datos);
+
+                alert("¡Gracias!")
+
+                window.location.reload()
+            })
+            loadCount();
+        </script>
+    </div>
+    <style>
+        .liked {
+            width: max-content;
+            padding: 6px;
+            border: 3px solid darkslategray;
+            border-radius: 8px;
+        }
+        .notes {
+            margin-top: 10px;
+            width: max-content;
+            padding: 6px;
+            border: 3px solid darkslategray;
+            border-radius: 8px;
+        }
+    </style>
+</div>

@@ -1,0 +1,120 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1e1e1e;
+    color: #ffffff;
+  }
+  
+  header {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  section {
+    padding: 50px;
+  }
+
+  .logo {
+    display: block;
+    margin: auto;
+    width: 145px;
+    height: 127px;
+  }
+
+  .button {
+    display: inline-block;
+    background-color: #8f1e3d;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  #inicio {
+    background-size: cover;
+    background-position: center;
+
+  }
+  
+  #descargar {
+    background-size: cover;
+    background-position: center;
+  }
+  
+  #sugerencias {
+    background-size: cover;
+    background-position: center;
+  }
+
+
+.new_ver {
+  background-color: #8f1e3d;
+}
+
+.cap1 {
+  width: 324px;
+  height: 674px;
+}
+
+.arrow-down-index {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50px;
+  height: 50px;
+  margin-top: -40px;
+}
+
+.sug_lbl {
+  display:block;
+  margin:auto;
+}
+
+.down_bttn {
+  color: whitesmoke;
+  background-color: #1e1e1e;
+  border: 2px solid #3a3a3a;
+  border-radius: 10px;
+}
+
+.android_logo {
+  width: 207.2px;
+  height: 132.2px;
+}
+
+.fedora_logo {
+  width: 132px;
+  height: 132px;
+}
+
+#sugerencia {
+  width: 300px;
+  height: 200px;
+}
+
+.link {
+  color: darkcyan;
+  text-underline: darkcyan;
+}

@@ -1,16 +1,49 @@
 ---
-
+import '../styles/globals.css';
+import { Image } from 'astro:assets';
+import an_img from '../imgs/an.png';
+import sh_logo from '../imgs/sh_logo.png';
 ---
+<head>
+	<meta charset="UTF-8">
+	<link rel="icon" href="/an.ico" type="image/x-icon">
+	<title>TripleAn</title>
+</head>
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<body>
+<h1 class="nombre">TripleAn<Image class="pp" src={an_img} alt="" /></h1>
+
+<div class="info">
+	<p>Programo cosas que se me ocurren de la absoluta nada.</p>
+	<div class="plang">
+		<h2 class="subsub">Lenguajes que uso seguido</h2>
+		<ul class="plangl">
+			<li><a>Python - Mi lenguaje principal</a></li>
+			<li><a>Rust - Aún aprendiendo</a></li>
+			<li><a>Flutter/Dart - Aún aprendiendo</a></li>
+		</ul>
+	</div>
+	<div class="act_lang">
+		<h2 class="subsub">Idiomas</h2>
+		<ul class="alangl">
+			<li><a>Español - Idioma natal</a></li>
+			<li><a>Inglés - Nivel C2</a></li>
+		</ul>
+		<p class="alangt">Además, estoy buscando aprender otros idiomas</p>
+	</div>
+	<div class="tools">
+		<h2 class="subsub">Herramientas</h2>
+		<p>Uso primariamente herramientas de Jetbrains (Pycharm, WebStorm, RustRover) y uso <a href="https://codeium.com/windsurf/">Windsurf Editor</a> para el resto de trabajo.</p>
+		<p>Además, utilizo <a href="https://codeium.com/">Codeium</a> (Ahora llamado Windsurf) para trabajar más rápido.</p>
+	</div>
+</div>
+<div class="proyectos">
+	<h3 class="proyectos_tit">Proyectos</h3>
+	<div class="act_pr">
+		<button class="sh_img_bttn" onclick="window.location.href='/sh/'"><Image class="sh_img" src={sh_logo} alt="Logo de SecurityHelpy" /><br><a class="sh_img_txt">Security Helpy</a></button>
+	</div>
+</div>
+<footer>
+	<a href="/privacy">Política de privacidad</a>
+</footer>
+</body>

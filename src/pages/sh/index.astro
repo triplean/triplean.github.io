@@ -1,0 +1,53 @@
+---
+import '../../styles/sh.css';
+import { Image } from 'astro:assets';
+import logo_img from '../../imgs/sh_logo.png';
+import arrow_down from '../../imgs/arrow_down.svg';
+import captura1 from '../../imgs/cap1.jpg';
+import Footer from '../../components/sh_footer.astro';
+import Likes from '../../components/sh_likes.astro';
+---
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security Helpy - Nunca te vuelvas a perder</title>
+    <link rel="icon" href="/sh_logo.ico" type="image/x-icon">
+</head>
+<body>
+<header>
+    <div>
+        <Image class="logo" src={logo_img} alt="" />
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="descargar">Descargar</a></li>
+                <li><a href="sugerencias">Sugerencias</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<section id="inicio">
+    <h2>Bienvenido a Security Helpy</h2>
+    <p>¿Harto de las páginas llenas de informacion basura al intentar completar una mision?</p>
+    <p>¿Los anuncios de estas páginas te son molestos y no quieres un adblock?</p>
+    <p>Secuirty Helpy te ofrece tutoriales. tips y guías para tu juego preferido, con guías paso a paso que se aseguraran que no te pierdas en un mar de posibilidades.</p>
+</section>
+<section id="images">
+    <h2>Capturas</h2>
+    <Image class="cap1" src={captura1} alt="" />
+</section>
+<section id="os">
+    <h2>Totalmente abierto</h2>
+    <p>Security Helpy es de codigo abierto y tú (si, tú) puedes ayudar a hacerlo aún mejor.</p>
+    <a class="github-button" href="https://github.com/triplean/securityhelpy" data-color-scheme="no-preference: dark; light: dark; dark: dark;" data-size="large" data-show-count="true" aria-label="Star triplean/securityhelpy on GitHub">Star</a>
+</section>
+<section id="likes">
+    <h2>Apoya al proyecto</h2>
+    <p>Hay infinidad de maneras de apoyar al proyecto y que crezca (incluido descargar la app)</p>
+    <Likes />
+    <a href="sugerencias" class="link"><span>O deja una sugerencia para mejorar la app</span></a>
+</section>
+<Footer />
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+</body>
