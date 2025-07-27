@@ -1,0 +1,123 @@
+[
+  {
+    "id": 1,
+    "title": "¡Bienvenido!",
+    "content": "¡Bienvenido a Security Helpy! Aquí encontrarás diversos tutoriales para tus juegos favoritos",
+    "game": "Sistema",
+    "imageUrls": []
+  },
+  {
+    "id": 2,
+    "title": "Como conseguir el pase de guardería",
+    "content": "Cuando las puertas se cierran Freddy nos dice que consigamos un pase. Para lograr esto hay que tomar en cuenta dos edificios: Faz-Pad y la tienda de regalos. Una vez que tomes el pase de entrada tendrás que dirigirte a la tienda de regalos, pero como la entrada en el primer piso está cerrada tendrás que acceder a ésta desde el segundo piso. Una vez que entres esquiva al Staff-Bot y busca las escaleras hacia el primer piso. Abre el regalo que se encuentra en un anaquel y presiona el botón de al lado de las puertas para abrirlas y salir. Luego entra a Faz-Pad desde el segundo piso igualmente, esquiva al Staff-Bot e ingresa a la puerta. Encontrás una cocina con otra puerta. Pasa por esa puerta y baja las escaleras. Entra a la puerta que es únicamente roja (no a la roja y azul) y al lado izquierdo tendrás una máquina. Acercate, coloca el pase de entrada y luego el imán que encontraste. Igualmente abre las puertas con el botón y al lado izquierdo de la tienda de regalos está la entrada de la guardería.",
+    "game": "FNAF: Security Breach",
+    "imageUrls": [
+      "https://assets.mycast.io/posters/five-nights-at-freddy-s-security-breach-genderswap-fan-casting-poster-188611-medium.jpg",
+      "https://triplean.github.io/projects/SecurityHelpy/resources/main-lobby.png"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Cómo conseguir el traje de astronauta en Dead Space",
+    "content": "Para conseguir el traje de astronauta en Dead Space, primero debes llegar a la nave USG Ishimura. Cuando llegues a la sala de comunicaciones, tendrás que buscar una terminal para desbloquear una nueva misión. Después de completar la misión, dirígete a la sala de almacén. Dentro de esta sala, encontrarás un pequeño cajón con el traje de astronauta. Simplemente interactúa con él para obtenerlo. Recuerda que el traje ofrece más espacio en tu inventario, por lo que será muy útil para las próximas secciones del juego.",
+    "game": "Dead Space",
+    "imageUrls": [
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Cómo vencer a Ganon en The Legend of Zelda: Breath of the Wild",
+    "content": "Para vencer a Ganon en Breath of the Wild, necesitas prepararte adecuadamente. Asegúrate de tener un buen suministro de flechas, especialmente flechas de luz. Durante la batalla, Ganon tiene varias fases, y en cada una utilizará ataques diferentes. En la primera fase, dispara flechas a su ojo cuando esté vulnerable. En la segunda fase, el combate será más cuerpo a cuerpo, por lo que asegúrate de tener un buen escudo y armamento. Aprovecha el momento en que Ganon se detenga a recargar energía para atacarlo con todo lo que tengas. Recuerda que Ganon puede lanzar rayos y fuego, por lo que debes esquivar constantemente. Después de derrotarlo, disfruta de la victoria y la épica secuencia final.",
+    "game": "The Legend of Zelda: Breath of the Wild",
+    "imageUrls": [
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Cómo conseguir el dron de apoyo en Star Wars: Jedi Fallen Order",
+    "content": "Para conseguir el dron de apoyo en Star Wars: Jedi Fallen Order, deberás avanzar en la historia hasta llegar a Kashyyyk. Una vez que llegues a la zona de la base imperial, busca una cueva secreta en la que podrás desbloquear el dron de apoyo. Este dron es útil para distraer a los enemigos y permitirte avanzar por áreas complicadas. Después de obtenerlo, simplemente presiona el botón adecuado durante el combate para desplegarlo. También puedes mejorar el dron a lo largo del juego para que sea aún más eficiente.",
+    "game": "Star Wars: Jedi Fallen Order",
+    "imageUrls": [
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Cómo conseguir el martillo de Thor en God of War",
+    "content": "Para conseguir el martillo de Thor, primero tendrás que avanzar bastante en la historia de God of War hasta llegar a la zona de la casa de Tyr. Allí encontrarás una puerta bloqueada que puedes abrir al desbloquear ciertas habilidades. El martillo está guardado en una sala secreta, y necesitarás resolver varios acertijos de mecánicas de juego para poder acceder a él. Una vez dentro, enfréntate a algunos enemigos poderosos y, finalmente, podrás reclamar el martillo de Thor, el cual te permitirá causar mucho más daño en combate.",
+    "game": "God of War",
+    "imageUrls": [
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Cómo desbloquear el modo zombi en Call of Duty: Black Ops",
+    "content": "Para desbloquear el modo Zombi en Call of Duty: Black Ops, simplemente completa el modo campaña. Al final de la campaña, podrás acceder al menú del modo Zombi. En este modo, deberás sobrevivir a hordas interminables de zombis mientras compras armas y mejoras. Cada mapa tiene sus propios secretos, y en algunos casos, necesitarás activar ciertos mecanismos o encontrar armas especiales para poder avanzar más en el juego.",
+    "game": "Call of Duty: Black Ops",
+    "imageUrls": [
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Cómo encontrar el End Portal en Minecraft",
+    "content": "Para encontrar el portal del End en Minecraft, primero necesitas recolectar perlas de Ender. Estas se obtienen al derrotar a los Enderman o combinándolas con polvo de Blaze en una mesa de trabajo. Luego, lanza una perla de Ender en el aire y sigue la dirección en la que se desplaza. Eventualmente, llegarás a una estructura subterránea conocida como la Fortaleza, en donde encontrarás el portal del End. Para activar el portal, coloca perlas de Ender en los bloques vacíos del portal. Una vez que esté activado, salta dentro para enfrentarte al Dragón del End.",
+    "game": "Minecraft",
+    "imageUrls": [
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Cómo conseguir la espada maestra en The Legend of Zelda: Ocarina of Time",
+    "content": "Para conseguir la espada maestra en Ocarina of Time, necesitas obtener las tres piedras espirituales y acceder al Templo del Tiempo. Una vez dentro, toca la Ocarina de Tiempo para abrir el portal hacia el futuro. Viaja al futuro y luego regresa al Templo del Tiempo. La espada maestra está guardada en una piedra en el centro del templo. Para obtenerla, será necesario ser digno, lo que significa que debes haber completado varios desafíos y derrotado a los jefes anteriores.",
+    "game": "The Legend of Zelda: Ocarina of Time",
+    "imageUrls": [
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Cómo obtener el Espacio del Inventario en Resident Evil 4",
+    "content": "En Resident Evil 4, el espacio de inventario es limitado, pero puedes expandirlo a través de ciertos objetos. Para obtener más espacio, necesitas encontrar y comprar los estuches de inventario más grandes en el mercader. Estos estuches son más caros a medida que avanzas en el juego, pero son esenciales para poder llevar más objetos como municiones, hierbas curativas y armas. También hay algunos estuches secretos que puedes encontrar si exploras con atención.",
+    "game": "Resident Evil 4",
+    "imageUrls": [
+    ]
+  },
+  {
+    "id": 11,
+    "title": "Cómo desbloquear el modo sigiloso en Metal Gear Solid V",
+    "content": "El modo sigiloso en Metal Gear Solid V te permite completar las misiones sin ser detectado. Para desbloquearlo, debes avanzar bastante en el juego hasta desbloquear las misiones secundarias. Estas misiones te permiten practicar técnicas de sigilo, como el uso de la caja y el sigilo nocturno. También puedes mejorar tu equipo para facilitar la evasión de los enemigos. Utiliza el camuflaje y mantente en las sombras para evitar ser visto. Si eres capturado, tendrás que reiniciar la misión.",
+    "game": "Metal Gear Solid V",
+    "imageUrls": [
+    ]
+  },
+  {
+    "id": 12,
+    "title": "Cómo acceder al mundo secreto en Super Mario Odyssey",
+    "content": "En Super Mario Odyssey, puedes acceder a un mundo secreto después de completar el juego. Para hacerlo, debes encontrar las lunas especiales escondidas en cada uno de los mundos. Al recolectar todas las lunas, abrirás el acceso a una nueva zona donde podrás enfrentarte a nuevos desafíos y enemigos. Este mundo secreto tiene muchos secretos adicionales que solo los jugadores más dedicados podrán descubrir.",
+    "game": "Super Mario Odyssey",
+    "imageUrls": [
+    ]
+  },
+  {
+    "id": 13,
+    "title": "Cómo conseguir el traje de pirata en Sea of Thieves",
+    "content": "Para conseguir el traje de pirata en Sea of Thieves, primero necesitas completar una serie de misiones de pirata. Estas misiones pueden incluir misiones de búsqueda, así como enfrentamientos con otros jugadores. Una vez que completes suficientes misiones, podrás intercambiar tus recompensas por el traje de pirata. Además, puedes personalizar tu traje con varios accesorios que puedes encontrar a lo largo del juego.",
+    "game": "Sea of Thieves",
+    "imageUrls": [
+    ]
+  },
+  {
+    "id": 14,
+    "title": "Cómo obtener el traje de hombre araña en Spider-Man PS4",
+    "content": "Para obtener el traje de hombre araña, necesitas completar ciertas misiones y obtener suficientes puntos de experiencia. Una vez que llegues a nivel 10, podrás desbloquear el primer traje adicional, pero hay más trajes que puedes desbloquear conforme avances en el juego. Algunos trajes se desbloquean al completar misiones secundarias o desafíos específicos. El traje de Spider-Man más icónico, el de Spider-Verse, se desbloquea tras completar una misión especial.",
+    "game": "Spider-Man PS4",
+    "imageUrls": [
+    ]
+  },
+  {
+    "id": 15,
+    "title": "Cómo conseguir la montura voladora en World of Warcraft",
+    "content": "Para conseguir la montura voladora en World of Warcraft, necesitas alcanzar el nivel 60 y comprar el libro de vuelo en una de las ciudades principales del juego. Una vez que hayas adquirido el libro, podrás comprar tu montura voladora en un vendedor específico. También hay monturas especiales que puedes conseguir completando misiones o derrotando jefes específicos. Asegúrate de obtener las habilidades necesarias para volar en las diferentes expansiones del juego.",
+    "game": "World of Warcraft",
+    "imageUrls": [
+    ]
+  }
+]
