@@ -3,89 +3,55 @@ import "../../styles/sh.css";
 import { Image } from "astro:assets";
 import logo_img from "../../imgs/sh_logo.png";
 import android_logo from "../../imgs/android_logo.png";
-import fedora from "../../imgs/fedora.png";
+import fedora from "../../imgs/tux.png";
 import Footer from "../../components/sh_footer.astro";
 ---
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Descargar - Security Helpy</title>
-    <link rel="icon" href="/sh_logo.ico" type="image/x-icon" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Security Helpy - Descargar</title>
+  <link rel="icon" href="/sh_logo.ico" type="image/x-icon" />
 </head>
 <body>
-    <header>
-        <div>
-            <Image class="logo" src={logo_img} alt="" />
-            <nav>
-                <ul>
-                    <li><a href="/sh/">Inicio</a></li>
-                    <li><a href="#">Descargar</a></li>
-                    <li><a href="/sh/sugerencias">Sugerencias</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <section id="descargar">
-        <h2>¿Estás listo?</h2>
-        <p>Da click en tu plataforma y salta a Security Helpy</p>
-        <button class="down_bttn" id="android_down"
-            ><Image class="android_logo" src={android_logo} alt="" /><br /><span
-                >Android</span
-            ></button
-        >
-        <button class="down_bttn" id="linux_down"
-            ><Image class="fedora_logo" src={fedora} alt="" /><br /><span
-                >Fedora Linux</span
-            ></button
-        >
-        <script type="module">
-            import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js";
-            import {
-                getFirestore,
-                doc,
-                getDoc,
-                updateDoc,
-            } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-firestore.js";
-
-            const firebaseConfig = {
-                apiKey: "AIzaSyB2G8p9xGYo4QgY7rVeHt8j_lgI545prk4",
-                authDomain: "securityhelpy.firebaseapp.com",
-                projectId: "securityhelpy",
-                storageBucket: "securityhelpy.appspot.com",
-                messagingSenderId: "",
-                appId: "379942943583",
-            };
-
-            const app = initializeApp(firebaseConfig);
-            const db = getFirestore(app);
-            const countRef = doc(db, "stats", "downloads");
-
-            document
-                .getElementById("android_down")
-                .addEventListener("click", async () => {
-                    const snap = await getDoc(countRef);
-                    if (!snap.exists()) return;
-
-                    const current = snap.data().android;
-                    await updateDoc(countRef, { android: current + 1 });
-
-                    window.location.href =
-                        "https://github.com/triplean/securityhelpy_fl/releases/download/2.0.0/securityhelpy.apk";
-                });
-            document
-                .getElementById("linux_down")
-                .addEventListener("click", async () => {
-                    const snap = await getDoc(countRef);
-                    if (!snap.exists()) return;
-
-                    const current = snap.data().linux;
-                    await updateDoc(countRef, { linux: current + 1 });
-
-                    window.location.href =
-                        "https://github.com/triplean/securityhelpy_fl/releases/download/2.0.0/linux_x64_securityhelpy.tar.gz";
-                });
-        </script>
-    </section>
-    <Footer />
+  <header>
+    <div>
+      <Image class="logo" src={logo_img} alt="" />
+      <nav>
+        <ul>
+          <li><a href="/sh/">Inicio</a></li>
+          <li><a href="#descargar">Descargar</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section id="descargar">
+    <h2>¿Estás listo?</h2>
+    <p>Da click en tu plataforma y salta a Security Helpy</p>
+    <button class="down_bttn" id="android_down">
+        <Image class="android_logo" src={android_logo} alt="" />
+        <br />
+        <span>Android</span>
+    </button>
+    <button class="down_bttn" id="linux_down">
+        <Image style="width:138px; height:132px;" src={fedora} alt="" />
+        <br/>
+        <span>Linux</span>
+    </button>
+    <script type="module">
+      document
+        .getElementById("android_down")
+        .addEventListener("click", async () => {
+          window.location.href =
+            "https://github.com/triplean/securityhelpy_fl/releases/download/2.0.0/securityhelpy.apk";
+        });
+      document
+        .getElementById("linux_down")
+        .addEventListener("click", async () => {
+          window.location.href =
+            "https://github.com/triplean/securityhelpy_fl/releases/download/2.0.0/linux_x64_securityhelpy.tar.gz";
+        });
+    </script>
+  </section>
+  <Footer />
 </body>

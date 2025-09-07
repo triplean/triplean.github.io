@@ -22,7 +22,6 @@ import Likes from '../../components/sh_likes.astro';
             <ul>
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="descargar">Descargar</a></li>
-                <li><a href="sugerencias">Sugerencias</a></li>
             </ul>
         </nav>
     </div>
@@ -37,16 +36,8 @@ import Likes from '../../components/sh_likes.astro';
     <h2>Capturas</h2>
     <Image class="cap1" src={captura1} alt="" />
 </section>
-<section id="os">
-    <h2>Totalmente abierto</h2>
-    <p>Security Helpy es de codigo abierto y tú (si, tú) puedes ayudar a hacerlo aún mejor.</p>
-    <a class="github-button" href="https://github.com/triplean/securityhelpy" data-color-scheme="no-preference: dark; light: dark; dark: dark;" data-size="large" data-show-count="true" aria-label="Star triplean/securityhelpy on GitHub">Star</a>
-</section>
-<section id="likes">
-    <h2>Apoya al proyecto</h2>
-    <p>Hay infinidad de maneras de apoyar al proyecto y que crezca (incluido descargar la app)</p>
-    <Likes />
-    <a href="sugerencias" class="link"><span>O deja una sugerencia para mejorar la app</span></a>
+<section id="warn">
+    <p>Nota: Security Helpy no es un producto totalmente pulido, y su estabilidad puede variar.</p>
 </section>
 <Footer />
 <script async defer src="https://buttons.github.io/buttons.js"></script>
