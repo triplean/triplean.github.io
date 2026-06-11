@@ -1,53 +1,75 @@
 ---
 import '../styles/globals.css';
 import { Image } from 'astro:assets';
-import an_img from '../imgs/an.png';
-import sh_logo from '../imgs/sh_logo.png';
+import gh from "../imgs/gh.png";
+import gl from "../imgs/gl.png";
+import cb from "../imgs/cb.png";
 ---
+
 <head>
 	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/an.ico" type="image/x-icon">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 	<title>TripleAn</title>
 </head>
 
-<body style="text-align: center;">
-<h1 class="nombre">TripleAn<Image class="pp" src={an_img} alt="" /></h1>
+<body>
+	<div class="nombrediv">
+		<h1 class="nombre">Jesús</h1>
+	</div>
+		
 
-<div class="info" style="display: inline-block">
-	<p>I code random things</p>
-	<div class="plang">
-		<h2 class="subsub">Programming languages</h2>
-		<ul class="plangl" style="text-align: justify">
-			<li><a>Python</a></li>
-			<li><a>Rust</a></li>
-			<li><a>Flutter/Dart</a></li>
-			<li><a>C#</a></li>
-   			<li><a>C++ (not that good)</a></li>
-		</ul>
+	<div class="info">
+		<p>Backend dev</p>
+		<div class="sec">
+			<h2 class="subsub">Programming languages</h2>
+			<ul class="ls">
+				<li><a>Python</a></li>
+				<li><a>Rust</a></li>
+				<li><a>Flutter/Dart</a></li>
+				<li><a>C#</a></li>
+   				<li><a>C++ (not that good)</a></li>
+			</ul>
+		</div>
+		<br>
+		<div class="sec">
+			<h2 class="subsub">Languages</h2>
+			<ul class="ls">
+				<li><a>Spanish</a></li>
+				<li><a>English</a></li>
+			</ul>
+		</div>
+		<h2 class="subsub">Socials</h2>
+    	<div class="socials">
+        	<button data-social="github.com" class="socbttn" >
+				<Image style="width: 46px; height: auto;" src={gh} alt="GitHub" />
+        	</button>
+			<button data-social="gitlab.com" class="socbttn">
+				<Image style="width: 46px; height: auto;" src={gl} alt="GitLab" />
+			</button>
+			<button data-social="codeberg.org" class="socbttn">
+				<Image style="width: 46px; height: auto;" src={cb} alt="Codeberg" />
+			</button>
+    	</div>
 	</div>
-	<div class="act_lang" style="display: inline-block">
-		<h2 class="subsub">Languages</h2>
-		<ul class="alangl" style="text-align: justify">
-			<li><a>Spanish</a></li>
-			<li><a>English</a></li>
-		</ul>
-	</div>
-    <div>
-        <a>I hate frontend btw</a>
-    </div>
-    <div style="margin-top: 20px">
-        <button class="ghbttn" onclick="window.location.href = 'https://github.com/triplean'">
-            <a>Github Profile</a>
-        </button>
-    </div>
-</div>
-<!--
-<div class="proyectos">
-	<h3 class="proyectos_tit">Projects</h3>
-	<div class="act_pr">
-		<button class="sh_img_bttn" onclick="window.location.href='/sh/'"><Image class="sh_img" src={sh_logo} alt="SecurityHelpy Logo" /><br><a class="sh_img_txt">Security Helpy</a></button>
-	</div>
-</div>
--->
+
+	<script>
+		document.querySelectorAll('.socbttn').forEach((bttn) => {
+			const social = bttn.dataset.social;
+			let uri = "https://"+social+"/triplean";
+
+			bttn.addEventListener('click', () => {
+				window.location.href = uri;
+			});
+
+			bttn.addEventListener('auxclick', (e) => {
+				if (e.button === 1) {
+					window.open(uri, '_blank');
+				}
+			});
+		});
+	</script>
 </body>

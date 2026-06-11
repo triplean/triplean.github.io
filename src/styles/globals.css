@@ -1,53 +1,24 @@
 body {
-    font-family: "Roboto", sans-serif;
+    font-family: "Hanken Grotesk", sans-serif;
     font-weight: 500;
     font-style: normal;
     margin: 0;
     padding: 0;
-    background-color: #feffce;
+    background-color: whitesmoke;
+    text-align: center;
 }
 
+
 .nombre {
+    font-family: "Urbanist", sans-serif;
     display: flex;
     justify-content: center;
     font-size: 40px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
 }
 
-.proyectos {
-    display: block;
-    justify-content: center;
-    align-items: center;
-    margin-left: 15px;
-}
-
-.proyectos_tit {
-    font-size: 30px;
-    margin-left: 7px;
-}
-
-.sh_img_bttn {
-    display: block;
-    background-color: orange;
-    border-radius: 20px;
-}
-
-.sh_img_bttn:hover {
-    cursor: pointer;
-}
-
-.sh_img {
-    width: 250px;
-    height: 200px;
-}
-
-.sh_img_txt {
-    font-size: 20px;
-}
-
-.act_pr {
-    display: block;
-    justify-content: left;
-}
 
 .info {
     margin-left: 15px;
@@ -57,23 +28,33 @@ body {
     font-size: 20px;
 }
 
-.alangt {
+.sec {
+    display: inline-block;
+}
+
+.ls {
+    list-style-type: circle;
+    text-align: justify;
     margin-left: 15px;
 }
 
-.pp {
-    width: 47px;
-    height: 47px;
-    margin-left: 10px;
+.socials {
+    display: flex;
+    gap: 20px;
+    margin-top: 15px;
+    justify-content: center;
 }
 
-.ghbttn {
-    border: 1px solid #FF8000;
-    border-radius: 10px;
-    background-color: #FF8000;
+.socbttn {
+    border: 0px solid;
+    background-color: transparent;
     font-size: 16px;
     padding-right: 8px;
     padding-left: 8px;
     padding-top: 4px;
     padding-bottom: 4px;
+}
+
+.socbttn:hover {
+    cursor: pointer;
 }
