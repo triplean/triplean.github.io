@@ -1,75 +1,77 @@
 ---
-import '../styles/globals.css';
-import { Image } from 'astro:assets';
+import "../styles/globals.css";
+import { Image } from "astro:assets";
 import gh from "../imgs/gh.png";
 import gl from "../imgs/gl.png";
 import cb from "../imgs/cb.png";
 ---
 
 <head>
-	<meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/an.ico" type="image/x-icon">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-	<title>TripleAn</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/an.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet"
+    />
+    <title>TripleAn</title>
 </head>
 
 <body>
-	<div class="nombrediv">
-		<h1 class="nombre">Jesús</h1>
-	</div>
-		
+    <div class="nombrediv">
+        <h1 class="nombre">Jesús</h1>
+    </div>
 
-	<div class="info">
-		<p>Backend dev</p>
-		<div class="sec">
-			<h2 class="subsub">Programming languages</h2>
-			<ul class="ls">
-				<li><a>Python</a></li>
-				<li><a>Rust</a></li>
-				<li><a>Flutter/Dart</a></li>
-				<li><a>C#</a></li>
-   				<li><a>C++ (not that good)</a></li>
-			</ul>
-		</div>
-		<br>
-		<div class="sec">
-			<h2 class="subsub">Languages</h2>
-			<ul class="ls">
-				<li><a>Spanish</a></li>
-				<li><a>English</a></li>
-			</ul>
-		</div>
-		<h2 class="subsub">Socials</h2>
-    	<div class="socials">
-        	<button data-social="github.com" class="socbttn" >
-				<Image style="width: 46px; height: auto;" src={gh} alt="GitHub" />
-        	</button>
-			<button data-social="gitlab.com" class="socbttn">
-				<Image style="width: 46px; height: auto;" src={gl} alt="GitLab" />
-			</button>
-			<button data-social="codeberg.org" class="socbttn">
-				<Image style="width: 46px; height: auto;" src={cb} alt="Codeberg" />
-			</button>
-    	</div>
-	</div>
+    <div class="info">
+        <p>Backend dev</p>
+        <div class="sec">
+            <h2 class="subsub">Programming languages</h2>
+            <ul class="ls">
+                <li><a>C#</a></li>
+                <li><a>Rust</a></li>
+                <li><a>C / C++</a></li>
+                <li><a>Python</a></li>
+                <li><a>Flutter / Dart</a></li>
+            </ul>
+        </div>
+        <br />
+        <div class="sec">
+            <h2 class="subsub">Languages</h2>
+            <ul class="ls">
+                <li><a>Spanish</a></li>
+                <li><a>English</a></li>
+            </ul>
+        </div>
+        <h2 class="subsub">Socials</h2>
+        <div class="socials">
+            <button data-social="github.com" class="socbttn">
+                <Image style="width: 46px; height: auto;" src={gh} alt="GitHub" />
+            </button>
+            <button data-social="gitlab.com" class="socbttn">
+                <Image style="width: 46px; height: auto;" src={gl} alt="GitLab" />
+            </button>
+            <button data-social="codeberg.org" class="socbttn">
+                <Image style="width: 46px; height: auto;" src={cb} alt="Codeberg" />
+            </button>
+        </div>
+    </div>
 
-	<script>
-		document.querySelectorAll('.socbttn').forEach((bttn) => {
-			const social = bttn.dataset.social;
-			let uri = "https://"+social+"/triplean";
+    <script>
+        document.querySelectorAll(".socbttn").forEach((bttn) => {
+            const social = bttn.dataset.social;
+            let uri = "https://" + social + "/triplean";
 
-			bttn.addEventListener('click', () => {
-				window.location.href = uri;
-			});
+            bttn.addEventListener("click", () => {
+                window.location.href = uri;
+            });
 
-			bttn.addEventListener('auxclick', (e) => {
-				if (e.button === 1) {
-					window.open(uri, '_blank');
-				}
-			});
-		});
-	</script>
+            bttn.addEventListener("auxclick", (e) => {
+                if (e.button === 1) {
+                    window.open(uri, "_blank");
+                }
+            });
+        });
+    </script>
 </body>
